@@ -10,8 +10,7 @@ namespace EmployeeWage
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to EmployeeWage Computation Problem");
-            //UC3- Add PartTime Employee and Wage
+            //UC4- switch case statement
             EmployeeAttendance.EmployeeWage();
             Console.ReadLine();
         }
