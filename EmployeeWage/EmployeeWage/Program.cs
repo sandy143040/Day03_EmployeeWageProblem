@@ -11,8 +11,8 @@ namespace EmployeeWage
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to EmployeeWage Computation Problem");
-            //UC- Employee Attendance
-            EmployeeAttendance.EmployeeCheck();
+            //UC- Employee's Daily Wage
+            EmployeeAttendance.EmployeeWage();
             Console.ReadLine();
         }
     }
