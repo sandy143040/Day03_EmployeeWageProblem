@@ -10,7 +10,7 @@ namespace EmployeeWage
     {
         static void Main(string[] args)
         {
-            //UC4- switch case statement
+            //UC5- Calculating Wages for Month
             EmployeeAttendance.EmployeeWage();
             Console.ReadLine();
         }
