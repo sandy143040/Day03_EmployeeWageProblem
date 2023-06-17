@@ -10,7 +10,6 @@ namespace EmployeeWage
     {
         static void Main(string[] args)
         {
-            //UC5- Calculating Wages for Month
             EmployeeAttendance.EmployeeWage();
             Console.ReadLine();
         }
