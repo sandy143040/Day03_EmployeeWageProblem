@@ -14,7 +14,7 @@ namespace EmployeeWage
         public const int NUM_OF_WORKING_DAYS = 20;
         public const int EMP_RATE_PER_HR = 20;
         public const int MAX_HRS_IN_MONTH = 100;
-        public static void EmployeeWage()
+        public static int ComputeEmpWage()
         {
             int empHrs = 0;
             int totalEmpHrs = 0;
@@ -42,6 +42,7 @@ namespace EmployeeWage
             }
             int totalEmpWage = totalEmpHrs * EMP_RATE_PER_HR;
             Console.WriteLine("Total emp wage : " + totalEmpWage);
+            return totalEmpWage;
         } 
     }
 }
