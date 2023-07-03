@@ -10,28 +10,15 @@ namespace EmployeeWage
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter the number of companies: ");
-            int numCompanies = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 1; i <= numCompanies; i++)
-            {
-                Console.WriteLine($"Enter details for company {i}:");
+            EmpWageBuilderObject dMart = new EmpWageBuilderObject("DMart", 20, 2, 10);
+            EmpWageBuilderObject reliance = new EmpWageBuilderObject("Reliance", 10, 4, 20);
+            dMart.computeEmpWage();
+            Console.WriteLine(dMart.toString());
+            reliance.computeEmpWage();
+            Console.WriteLine(reliance.toString());
 
-                Console.Write("Name: ");
-                string name = Console.ReadLine();
-
-                Console.Write("Wage per hour: ");
-                int wage = Convert.ToInt32(Console.ReadLine());
-
-                Console.Write("Working hours per day: ");
-                int hours = Convert.ToInt32(Console.ReadLine());
-
-                Console.Write("Working days per month: ");
-                int days = Convert.ToInt32(Console.ReadLine());
-
-                EmployeeAttendance.ComputeEmpWage(name, wage, hours, days);
-                Console.ReadLine();
-            }
+            Console.ReadLine();
         }
     }
 }
